@@ -1,0 +1,59 @@
+#rodape {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(60deg, #F2AE2E 0%, #F27244 112.71%);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#geral-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-align: center;
+
+    padding-top: 50px;
+    margin-right: -65px;
+}
+
+#logo-rodape {
+    width: 200px;
+}
+
+#direitos-rodape {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    margin-top: 40px;
+}
+
+/* ========== Resposividade ========== */
+
+
+@media (max-width: 1080px)
+
+/*Celular*/
+{
+
+    #rodape{
+        height: 600px;
+    }
+
+    #geral-rodape{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+
+        padding-top: -20px;
+        margin-right: 0;
+    }
+
+    #geral-rodape div{
+        margin-bottom: 20px;
+    }
+}

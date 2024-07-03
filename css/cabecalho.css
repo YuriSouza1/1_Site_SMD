@@ -1,0 +1,33 @@
+#cabecalho{
+    background: linear-gradient(60deg, #F2AE2E 0%, #F27244 112.71%);
+    height: 700px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+#cabecalho img{
+    width: 400px;
+}
+
+#cabecalho p{
+    color: white;
+    margin-top: -30px;
+}
+
+/* ========== Resposividade ========== */
+
+@media (max-width: 1080px)
+/*Celular*/
+{ 
+    #cabecalho{
+        height: 650px;
+    }
+
+    #cabecalho img{
+        width: 300px;
+    }
+}

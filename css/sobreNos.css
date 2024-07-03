@@ -1,0 +1,170 @@
+#sobre-nos{
+    background: #FEFCF3;
+}
+
+#tituloSobreNos{
+    background-image: linear-gradient(60deg, #F2AE2E 0%, #F27244 112.71%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+#descricoes-sobrenos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+
+    margin: 40px;
+}
+
+#descricoes-sobrenos div /* Pega a imagem, com a pergunta e a descrição */
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: row;
+}
+
+#descricoes-sobrenos div div /* Pega só com a pergunta e a descrição */
+{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    margin: 30px;
+}
+
+#descricoes-sobrenos img{
+    width: 200px;
+}
+
+/* ========== Nossa Equipe ========== */
+
+#tituloNossaEquipe{
+    background-image: linear-gradient(60deg, #F2AE2E 0%, #F27244 112.71%);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    padding-top: -20px;
+    padding-bottom: 60px;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+#nossa-equipe{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    margin-bottom: 80px;
+}
+
+.caixa-funcionarios{
+    background-image: linear-gradient(60deg, #F2AE2E 0%, #F27244 112.71%);
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    box-shadow: 2px 2px 2px #f2ad2e8a;
+}
+
+.caixa-funcionarios {
+    color: white;
+}
+
+.foto-funcionarios{
+    width: 220px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.botoes-funcionarios{
+    width: 85%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+
+    border-radius: 50px;
+    background: white;
+    border: 0;
+    color: #F27244;
+}
+
+.botoes-funcionarios a{
+    color: #F27244;
+}
+
+/* ========== Resposividade ========== */
+
+@media (max-width: 1080px)
+/*Celular*/
+{    
+    #tituloSobreNos{
+        font-size: 50px;
+    }
+
+    #descricoes-sobrenos div{
+        display: flex;
+        align-items: center;
+        text-align: left;
+        flex-direction: column;
+    }
+
+    #descricoes-sobrenos img{
+        width: 150px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    /* ========== Nossa Equipe ========== */
+
+    #tituloNossaEquipe{
+        font-size: 40px;
+    }
+
+    #nossa-equipe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .caixa-funcionarios{
+        margin-top: 20px;
+    }
+}

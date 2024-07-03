@@ -1,0 +1,145 @@
+/*Barra de Rolagem*/
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #FEFCF3;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(60deg, #F2AE2E 0%, #F27244 112.71%);
+    width: 10px;
+}
+
+/* ========================== */
+
+.dropdown{
+    display: none;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 25px;
+    margin-left: -20px;
+}
+
+ul li{
+    margin-top: 6px;
+    margin-left: -80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+}
+
+.espaco{
+    width: 5px;
+    height: auto;
+}
+
+nav {
+    width: 70%;
+}
+
+.logo {
+    padding: 10px 0;
+}
+
+#logoCabecalho{
+    margin-left: 50px;
+}
+
+.direita{
+    margin-right: 50px;
+}
+
+.barra {
+    width: 100%;
+    background: #0f0f0fc4;
+    position: fixed;
+    top: 0;
+    z-index: 7;
+}
+
+.barra-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botoesMenu{
+    border-radius: 6px;
+    background-color: transparent;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 7px 10px;
+    border: 0;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    margin-top: -7px;
+    text-decoration: none;
+}
+
+.botoesMenu:hover{
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    color: #F2AE2E;
+    text-decoration: none;
+}
+
+.iconesMenu{
+    padding-right: 6px;
+}
+
+/* ========== Resposividade ========== */
+
+@media (max-width: 1080px)
+/*Celular*/
+{    
+    /*Cabeçalho*/
+    body{
+        max-width: 1080px;
+    }
+
+    .barra{
+        width: 100%;
+    }
+
+    .dropdown{
+        display: flex;
+        z-index: 9;
+    }
+
+    #dropdownMenuButton{
+        background-color: transparent;
+        /* margin-left: -280px; */
+        border: 0;
+    }
+
+    #dropdownMenuButton{
+        color: transparent;
+    }
+
+    .direita{
+        display: none;
+    }
+    
+    .logoEsquerda{
+        margin-left: 50px;
+    }
+
+    #logoCabecalho{
+        margin-left: -20px;
+    }
+}

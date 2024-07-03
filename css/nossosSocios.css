@@ -1,0 +1,163 @@
+#nossos-socios{
+    background: linear-gradient(60deg, #F2AE2E 0%, #F27244 112.71%);
+}
+
+#tituloNossosSocios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    color: white;
+    padding-top: 50px;
+    font-weight: bolder;
+    font-size: 70px;
+}
+
+.descricao-nossossocios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+
+    margin: 40px;
+}
+
+#descricoes-nossossocios div /* Pega a imagem, com a pergunta e a descrição */
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: row;
+}
+
+#descricoes-nossossocios div div /* Pega só com a pergunta e a descrição */
+{
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    flex-direction: column;
+    margin: 30px;
+    color: white;
+}
+
+#descricoes-nossossocios img{
+    width: 200px;
+}
+
+#descricoes-nossossocios button{
+    background: white;
+    border: 0;
+    border-radius: 50px;
+    width: 40%;
+    height: 50px;
+}
+
+#descricoes-nossossocios a{
+    color: #F27244;
+    font-size: 20px;
+}
+
+/* ========== Cards de Produtos ========== */
+
+#cards-socios{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+
+    margin-bottom: 30px;
+}
+
+.div-card-socios{
+    background-color: white;
+    width: 260px;
+    height: 400px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.425);
+
+    margin-bottom: 50px;
+}
+
+.div-card-socios h3 {
+    color: black;
+    font-size: 20px;
+}
+
+.foto-produtos{
+    width: 220px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.botoes-comprar{
+    width: 85%;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 20px;
+
+    border-radius: 50px;
+    background: #F2AE2E;
+    border: 0;
+    color: white;
+    font-weight: bolder;
+}
+
+.botoes-comprar a{
+    color: white;
+}
+
+.botoes-comprar a:hover{
+    color: #F27244;
+    transition: ease-in-out 0.3s;
+    text-decoration: none;
+
+}
+
+/* ========== Resposividade ========== */
+
+@media (max-width: 1080px)
+/*Celular*/
+{   
+    #tituloNossosSocios{
+        font-size: 40px;
+    }
+
+    #descricoes-nossossocios div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #descricoes-nossossocios img{
+        width: 130px;
+        margin-top: 50px;
+    }
+
+    #cards-socios{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .div-card-socios{
+        margin-top: 20px;
+    }
+}
